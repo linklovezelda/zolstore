@@ -831,7 +831,7 @@ a:hover {
 /* 写到这里了 */
 
 .header .wrapper .city-active .icon {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/header/images/icon_header-5c9487cee2.png) no-repeat 0 3px
+    background: url(../img/icon_header-5c9487cee2.png) no-repeat 0 3px
 }
 
 .header .wrapper .city-list {
@@ -945,7 +945,7 @@ a:hover {
 }
 
 a.icon-baoliao {
-    background: url(http://icon.zol-img.com.cn/daogou/src/assets/components/header/images/icon-baoliao.png) 0 49% no-repeat;
+    background: url(../img/icon-baoliao.png) 0 49% no-repeat;
     padding-left: 24px!important;
     margin-top: 28px;
     margin-right: 20px;
@@ -1085,17 +1085,17 @@ h2 a:hover {
 
 .foot-info-fl .commit,
 .tit-right-info .commit {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/commit-db920cf07d.png) no-repeat
+    background: url(../img/commit-db920cf07d.png) no-repeat
 }
 
 .foot-info-fl .collect,
 .tit-right-info .collect {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/collect-e27ee0ce6e.png) no-repeat
+    background: url(../img/collect-e27ee0ce6e.png) no-repeat
 }
 
 .foot-info-fl .collect.on,
 .tit-right-info .collect.on {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/collecthover-806018c951.png) no-repeat
+    background: url(../img/collecthover-806018c951.png) no-repeat
 }
 
 .foot-info-fl .name a,
@@ -1208,11 +1208,11 @@ h2 a:hover {
 }
 
 .tuan-icon {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/tuan_03-3b35b02f7c.png) no-repeat
+    background: url(../img/tuan_03-3b35b02f7c.png) no-repeat
 }
 
 .tit-right-info span.send-phone {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/share-c7f3f8db4c.png) no-repeat
+    background: url(../img/share-c7f3f8db4c.png) no-repeat
 }
 
 .commit-info-mol .tag-link a,
@@ -1246,7 +1246,7 @@ h2 a:hover {
 }
 
 .like-item .pic-text .tuan-icon {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/tuan2-3fcf5e1611.png) no-repeat;
+    background: url(../img/tuan_03-3b35b02f7c.png) no-repeat;
     width: 14px;
     position: absolute;
     right: 0;
@@ -1311,7 +1311,7 @@ h2 a:hover {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/tuan_03-3b35b02f7c.png) no-repeat;
+    background: url(../img/tuan_03-3b35b02f7c.png) no-repeat;
     margin-left: 5px
 }
 
@@ -1321,7 +1321,7 @@ h2 a:hover {
 }
 
 .tit-right-info span.send-phone {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/list/images/share-c7f3f8db4c.png) no-repeat
+    background: url(../img/share-c7f3f8db4c.png) no-repeat
 }
 
 .commit-info-mol {
@@ -1393,19 +1393,19 @@ h2 a:hover {
 }
 
 .title .header-tit.doday-buy {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/title/images/jinriqianggou-07e20c3114.png) no-repeat;
+    background: url(../img/jinriqianggou-07e20c3114.png) no-repeat;
     width: 96px;
     height: 22px
 }
 
 .title .header-tit.huimaizhuanji {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/title/images/huimaizhuanji-74ca0853b2.png) no-repeat;
+    background: url(../img/huimaizhuanji-74ca0853b2.png) no-repeat;
     width: 96px;
     height: 22px
 }
 
 .title .header-tit.youxuantuijian {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/title/images/huixuantuijian-6f6cfca2d9.png) no-repeat;
+    background: url(../img/huixuantuijian-6f6cfca2d9.png) no-repeat;
     width: 94px;
     height: 23px
 }
@@ -1465,7 +1465,7 @@ h2 a:hover {
 }
 
 .hd-btn span:hover .icon {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/modules/btn/images/paixuhover-3cbe93a90e.png) no-repeat 0 1px
+    background: url(../img/paixuhover-3cbe93a90e.png) no-repeat 0 1px
 }
 
 .hd-btn span .icon {
@@ -1474,7 +1474,7 @@ h2 a:hover {
     margin-left: 5px;
     width: 7px;
     height: 14px;
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/modules/btn/images/paixu-1e8ef12ed7.png) no-repeat 0 1px
+    background: url(../img/paixu-1e8ef12ed7.png) no-repeat 0 1px
 }
 
 .hd-btn .on {
@@ -1489,7 +1489,7 @@ h2 a:hover {
 }
 
 .star .star-bottom {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/star/images/star-hui-1bcbc82391.png);
+    background: url(../img/star-hui-1bcbc82391.png);
     background-position: 0 0
 }
 
@@ -1503,7 +1503,7 @@ h2 a:hover {
 }
 
 .star .star-top {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/star/images/star-hong-3d5c1851e1.png) #fff;
+    background: url(../img/star-hong-3d5c1851e1.png) #fff;
     background-position: 0 0;
     z-index: 9
 }
@@ -1514,12 +1514,12 @@ h2 a:hover {
 }
 
 .small-star .star-top {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/star/images/icon_03-24caa8eb58.png) #fff;
+    background: url(../img/icon_03-24caa8eb58.png) #fff;
     background-position: 0 0
 }
 
 .small-star .star-bottom {
-    background: url(https://icon.zol-img.com.cn/daogou/src/assets/components/star/images/icon_03-24caa8eb58.png) #fff;
+    background: url(../img/icon_03-24caa8eb58.png) #fff;
     background-position: 0 -18px
 }
 
@@ -1641,7 +1641,7 @@ body {
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url(https://icon.zol-img.com.cn/daogou/src/index/images/xiao-tuan-ef67e0c03d.png) no-repeat;
+    background: url(../img/../img/tuan_03-3b35b02f7c.png) no-repeat;
     margin-right: 6px
 }
 
@@ -1655,7 +1655,7 @@ body {
     height: 32px;
     line-height: 32px;
     margin: 0 auto;
-    background: url(http://icon.zol-img.com.cn/mobile/slide/loading.gif) no-repeat;
+    background: url(../img/loading.gif) no-repeat;
     color: #999;
     font-size: 20px;
     padding-left: 35px
