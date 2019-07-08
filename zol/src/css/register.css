@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+}
+
+
+/* 头部开始 */
+
+.header {
+    padding: 50px 0;
+}
+
+.logobox {
+    float: left;
+}
+
+.logobox .one {
+    float: left;
+}
+
+.logobox .two {
+    float: left;
+    margin: 8px 0 0 8px;
+    padding-left: 10px;
+    font: 14px/44px simsun;
+    color: #666;
+    border-left: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+
+.registerbox {
+    float: right;
+    padding: 21px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.registerbox a {
+    float: right;
+    height: 16px;
+    padding: 3px 10px;
+    color: #c00;
+    font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+
+/* 头部结束 */
+
+.registerwrap {
+    padding: 0 0 100px;
+    border: 1px solid #e6e6e6;
+    width: 980px;
+    height: 700px;
+    margin-top: 30px
+}
+
+.registerwrap .title {
+    padding: 16px 0 16px 90px;
+    background: #fafafa;
+    font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+    color: #999;
+    text-align: center
+}
+
+.registermain {
+    float: left;
+    padding: 30px 0 0 89px;
+    width: 500px;
+}
+
+.registermain .registertab {
+    height: 39px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.registermain .reg_phone {
+    float: left;
+    position: relative;
+    width: 250px;
+    font-size: 18px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0 none;
+    text-align: center;
+    margin: 0 -1px -1px;
+    padding: 0 0 2px;
+    border-top: 2px solid #e02d2d;
+    background: #fff;
+    cursor: default;
+    color: #c00;
+    line-height: 36px;
+    background: url(../img/login-bg.png) no-repeat;
+    background-position: -105px -235px;
+}
+
+.register_phone_num {
+    padding: 30px 0 0;
+}
+
+.register_form {
+    position: relative;
+    margin: 0 0 42px;
+    padding: 0 0 0 83px;
+    zoom: 1;
+}
+
+.register_form .label {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 83px;
+    font: 14px/40px "Arial";
+    text-align: right;
+    color: #666;
+}
+
+.register_form .label .xinhao {
+    padding: 0 7px 0 0;
+    font-size: 12px;
+    font-family: "Simsun";
+    color: #f30;
+}
+
+.register_form .text {
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 8px 5px;
+    width: 278px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+
+.register_form .tips {
+    position: absolute;
+    top: 47px;
+    left: 83px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.agreement {
+    display: block;
+    padding: 0 0 0 83px;
+    height: 32px;
+    font: 12px/32px "Arial";
+    color: #999;
+}
+
+.register_btn {
+    display: block;
+    margin: 20px 0 0 83px;
+    width: 290px;
+    height: 40px;
+    font: bold 14px/40px "Arial";
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    background-position: 0 0;
+    cursor: pointer;
+    background: url(../img/bg.png) no-repeat;
+}
+
+.fast_login {
+    float: right;
+    margin: 30px 0 0;
+    padding: 0 80px 0 25px;
+    width: 170px;
+    border-left: 1px solid #f5f5f5;
+}
+
+.fast_login p {
+    margin: -6px 0 0;
+    font: 12px/24px "Arial";
+    color: #666;
+}
+
+.fast-login-list a {
+    display: block;
+    margin: 15px 0 0;
+    width: 170px;
+    height: 36px;
+    text-indent: -9999em;
+    overflow: hidden;
+    zoom: 1;
+    background: url(https://login.zol.com/image/login-bg.png) no-repeat;
+}
+
+.fast-login-list .weixin {
+    background: url(http://icon.zol-img.com.cn/newshop/login/weixin.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.fast-login-list .sina {
+    background-position: 0 0;
+}
+
+.fast-login-list .qq {
+    background-position: 0 -37px;
+}
+
+.fast-login-list .alipay {
+    background-position: 0 -74px;
+}
+
+.fast-login-list .baidu {
+    background-position: 0 -111px;
+}
+
+
+/* 尾部 */
+
+.footer {
+    margin: 50px 0 0;
+    padding: 12px 0 25px;
+    border-top: 1px solid #dcdcdc;
+    font-size: 12px;
+}
+
+.clearfix {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.footer .about {
+    float: left;
+    margin: 0 0 0 -10px;
+    color: #ccc;
+}
+
+.copyright {
+    float: right;
+    color: #666;
+}

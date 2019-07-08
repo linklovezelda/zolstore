@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>购物车 查看购物车</title>
+    <meta name="keywords" content="购物车 查看购物车" />
+    <meta name="description" content="购物车 查看购物车" />
+    <link href="./css/cart.css" rel="stylesheet" type="text/css" />
+    <link href="./css/orderpublic.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- topbar -->
+    <link href="./css/sitenav.css" rel="stylesheet" />
+
+    <!-- //topbar -->
+    <!-- header -->
+    <div class="header clearfix">
+        <!--logo样式 -->
+        <div class="logo">
+            <a href="http://www.zol.com" title="中关村商城"><img src="http://icon.zol-img.com.cn/newshop/shop/index/logo_130x60.png" width="130" height="60"></a>
+
+        </div>
+        <div class="flow-step">
+
+            <ul class="flow-step-1">
+                <li class="s1">加入购物车</li>
+                <li class="s2">下订单</li>
+                <li class="s3">去付款</li>
+                <li class="s4">确认收货</li>
+                <li class="s5">评价</li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- //header -->
+    <div class="wrapper">
+
+        <form action="/index.php?c=ConfirmOrder" method="post">
+            <input type="hidden" name="buyType" value="2" />
+            <div class="cart-state mt">
+                <p>购物车状态<em>（1/30）</em></p>
+                <div class="total"><input name="submitCart" type="submit" value="去结算"><span>总计（不含运费）：<em>&yen;</em><em class="total-cart-price">2198</em></span></div>
+            </div>
+            <div class="order-table mt20">
+                <table width="100%">
+                    <tr>
+                        <th class="th-1"><label><!--<input name="checkAllCart" type="checkbox" value="1" checked>全选</label>--></th>
+                        <th class="th-2">所选商品</th>
+                        <th class="th-3">单价（元）</th>
+                        <th class="th-4">数量</th>
+                        <th class="th-5">优惠</th>
+                        <th class="th-6">小计（元）</th>
+                        <th class="th-7">操作</th>
+                    </tr>
+
+                    <tr id="merchant_191490">
+                        <td colspan="7" class=" store-infor clearfix">
+                            <div class="shopname"><input name="merchantId[]" type="radio" rel="forshop" value="191490" checked>店铺：<a href="http://www.zol.com/shop_191490/" target="_blank">甲骨龙旗舰店</a> </div>
+                            <div class="contact">
+                                <a class="tag-security" style="margin: 0 -9px 0 0">&nbsp;</a>
+                            </div>
+                            <div class="contact">
+
+                                <a target="_blank" href=""><img border="0" src="http://wpa.qq.com/pa?p=2:2900758886:52" alt="点击这里给我发消息" title="点击这里给我发消息" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr rel="goods-order" id="cart_2973525" istuan='1'>
+                        <td colspan="2" class="s-infor">
+
+                            <input name="cartId[]" type="checkbox" value="2973525" item="item" rel="foritem" merchantId="191490" checked>
+                            <!--新增对购物车已下架商品-->
+                            <a href="" class="pic" target="_blank"><img width="80" height="80" src="https://mercrt-fd.zol-img.com.cn/t_s80x60/g2/M00/0A/06/ChMlWlx6LN-IByS4AAIGVz26X_kAAIjlgAiZywAAgZv455.jpg" alt="技嘉（GIGABYTE）Z390 GAMING X 主板 (Intel Z390/LGA 1151)"></a>
+                            <div class="inforbox">
+                                <h3 class="tit"><a href="http://www.zol.com/detail/motherboard/gigabyte/32291491.html?skuId=13979679" title="技嘉（GIGABYTE）Z390 GAMING X 主板 (Intel Z390/LGA 1151)" target="_blank">技嘉（GIGABYTE）Z390 GAMING X 主板 (Intel Z390/LGA 1151)</a></h3>
+                                <div class="security clearfix">
+                                    <a href="http://go.zol.com/topic/3056598.html" title="7天退换货" class="security-a" target="_blank"></a>
+                                </div>
+
+                                <p>颜色：Z390 GAMING X</p>
+                                <div class="info-con">
+                                    <span>套装：官方标配</span>
+                                    <div class="info-help">
+                                        <h5>官方标配：</h5>
+                                        <p>官方标配</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td class="s-price ">
+                            <em class="s-old-price">1199.00</em>
+                            <em>1099.00</em>
+
+                        </td>
+                        <td class="s-amount ">
+                            <div class="buy-num">
+
+                                <a class="minus" href="javascript:void(0)" title="减一" onClick="$.updateCartnumber({cartId:'2973525', maxNumber:'10', updateType:'minus', costNumber:'2', merchantId:'191490'})">-</a>
+                                <input type="text" autocomplete="off" class="text-amount" value="2" onBlur="$.updateCartnumber({cartId:'2973525', maxNumber:'10',updateType:'change', costNumber:'2', merchantId:'191490'})" id="cartNumber_2973525">
+                                <a class="plus" href="javascript:void(0)" title="加一" onClick="$.updateCartnumber({cartId:'2973525', maxNumber:'10',updateType:'plus', costNumber:'2', merchantId:'191490'})">+</a>
+                                <div class="tips-2" id="tips_2973525" style="display:none;"></div>
+
+                                <!--新增对购物车已下架商品-->
+                            </div>
+                        </td>
+                        <td class="s-agio">
+                            <span class="icon">团购</span>
+                            <p class="time" end-time="1562555532"><span>06</span>小时<span>42</span>分<span>29</span>秒</p>
+
+
+                        </td>
+                        <td class="s-total">
+                            <em id="cartGoodsPcie_2973525">2198</em>
+                        </td>
+                        <td class="s-del">
+                            <div class="s-delbox">
+                                <a href="javascript:void(0)" title="移入收藏夹" onclick="$.deleteCart({cartId:'2973525', deleteType:'collect'})">移入收藏夹</a>
+                                <a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2973525'})">删除</a>
+                                <div class="deletebox" style="display:none;" id="zp-cart-2973525">
+                                    <p>确认要删除该商品吗？</p>
+                                    <a href="javascript:void(0)" onclick="$.deleteCart({cartId:'2973525', deleteType:'delete'})">是的</a><a href="javascript:void(0)" onclick="$.closeDeleteCart({cartId:'2973525'})">取消</a> <i></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="total-price">商品总价<span>（不含运费）</span>：<em>&yen;</em><em class="total-cart-price">2198</em></div>
+
+                <div class="order-foot clearfix">
+                    <label><!--<input name="checkAllCart" type="checkbox" value="1" checked>全选</label>-->
+                    <a href="javascript:void(0)" onclick="$.deleteAll()">批量删除</a>
+
+                    <a href="http://www.zol.com" class="go-shopping">&lt;&lt;继续购物</a>
+                    <input type="submit" value="去结算" name="submitCart" class="accounting-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="wrapper" id="zp-goods-recommend">
+        <div class="modgoods mt20">
+            <ul class="modgoods-tab clearfix">
+                <li class="cur">猜你喜欢</li>
+                <!--
+			<li>最近浏览商品</li>
+			<li>我的收藏</li>
+                        -->
+            </ul>
+            <div class="modgoods-tabbox">
+                <ul class="modgoods-list clearfix">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="links"><a target="_blank" href="http://www.zol.com/help/detail/17/73/675.html">关于商城</a>|<a target="_blank" href="http://www.zol.com/marketing/">营销中心</a>|<a target="_blank" href="http://www.zol.com/help/">服务中心</a>|<a target="_blank" href="http://www.zol.com/help/detail/17/73/674.html">联系我们</a>|
+            <a target="_blank" href="http://www.zol.com/help/detail/17/73/676.html">发展历程</a>|<a target="_blank" href="http://www.zol.com/help/detail/17/73/677.html">媒体报道</a></p>
+        <p><span class="copyright">&copy;<script type="text/javascript">
+                                var yearStr;
+                                now = new Date();
+                                yearStr = now.getFullYear();
+                                document.write(yearStr);</script>中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证010391号</a></span></p>
+        <div class="authentication">
+            <a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001021500016"><img width="108" height="40" alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png"></a>
+            <a target="_blank" href="http://fzp.bjhd.gov.cn/tabid/179/Default.aspx"><img width="108" height="40" alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png"></a>
+            <a target="_blank" href="https://search.szfw.org/cert/l/CX20111228001277001325" id="___szfw_logo___"><img src="https://search.szfw.org/cert.png?l=CX20111228001277001325"></a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
