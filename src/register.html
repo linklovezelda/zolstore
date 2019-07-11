@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/css/register.css">
+
+</head>
+
+
+<body>
+    <!-- 头部 -->
+    <div class="wrapper">
+        <div class="header">
+            <div class="logobox">
+                <a href="zol2_index.html">
+                    <span class="one"> <img src="../src/img/logo (1).png" alt=""></span>
+                    <span class="two">中关村在线旗下导购平台</span>
+
+
+
+                </a>
+            </div>
+            <div class="registerbox">
+                <a href="login.html">立即登录</a>已经有值买账号？
+            </div>
+        </div>
+
+        <!-- 注册部分 -->
+        <div class="registerwrap">
+            <div class="title">30秒快速注册，加入值买</div>
+            <form action="http://127.0.0.1:8080/1905/register.php" method="POST" class="regform" id="formreg">
+                <div class="registermain">
+                    <ul class="registertab">
+                        <li class="reg_phone"> <span class="phone_num">用手机号注册</span> </li>
+                    </ul>
+                    <div class="register_phone_num" style="display: block">
+                        <div class="register_form">
+                            <div class="label">
+                                <em class="xinhao">*</em> 手机号:
+                            </div>
+                            <input type="text" name="username" class="text username" maxlength="11" id="username" placeholder="请输入手机号">
+                            <i class="right-tips" style="display: none"></i>
+                            <i class="wrong-tips" id="J_register_phone_tips"></i>
+                            <div class="tips"></div>
+
+                        </div>
+                        <div class="register_form">
+                            <div class="label"><em class="xinhao">*</em>密码：</div>
+                            <input name="password" id="password" type="password" class="text password" placeholder="请输入密码">
+                            <i class="wrong-tips" style="display:none;" id="J_register_pasword_phone_tips"></i>
+                            <div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+                        </div>
+                        <div class="register_form">
+                            <div class="label"><em class="xinhao">*</em>确认密码：</div>
+                            <input name="passcheck" id="register_regPasword_phone" type="password" class="text passcheck">
+                            <i class="wrong-tips" style="display:none;" id="J_register_regPasword_phone_tips"></i>
+                            <div class="tips">再次输入密码</div>
+                        </div>
+                        <label class="agreement">                                            
+                                <input type="checkbox" value="1" name="J_regRead_phone" id="J_regRead_phone" checked="" class="agree">同意<a href="" target="_blank">《商城用户协议》</a><a href="" target="_blank" class="xy_a">《隐私权说明》</a>
+                            </label>
+                        <input name="J_register_phone_submit" type="submit" value="注册" class="register_btn btn" id="J_register_phone_submit">
+
+                    </div>
+
+                </div>
+                <div class="fast_login">
+                    <p>如果您已经注册，请<a href="login.html">直接登录</a>或者用以下方式登录：</p>
+                    <div class="fast-login-list">
+                        <a target="_blank" href="" class="weixin">微信登录</a>
+                        <a target="_blank" href="" class="sina">新浪微博登录</a>
+                        <a target="_blank" href="" class="qq">腾讯QQ登录</a>
+                        <a target="_blank" href="" class="alipay">支付宝账号登录</a>
+                        <a target="_blank" href="" class="baidu">百度账号登录</a>
+                    </div>
+                </div>
+        </div>
+
+        </form>
+
+    </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about"><a href="" target="_blank">关于Z商城</a>|<a href="" target="_blank">联系我们</a>|<a href="" target="_blank">帮助中心</a></div>
+            <div class="copyright">© 2019. 中关村在线 版权所有</div>
+        </div>
+    </div>
+    <script src="./script/thirdplugins/jquery.min.js"></script>
+
+    <script src="./script/thirdplugins/jquery.validate.min.js"></script>
+    <script src="./script/js/register.js"></script>
+
+</body>
+
+</html>

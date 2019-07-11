@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    width: 1009px;
+    height: 377px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.piclist {
+    position: absolute;
+}
+
+.piclist li {
+    float: left;
+}
+
+.piclist li img {
+    width: 1009px;
+    height: 377px;
+}
+
+li {
+    list-style: none;
+}
+
+.btnlist {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btnlist li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: red;
+    text-indent: -99999px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btnlist .active {
+    background: blue;
+}
+
+#left,
+#right {
+    font-size: 64px;
+    color: #000;
+    position: absolute;
+    top: 150px;
+    text-decoration: none;
+}
+
+#left {
+    left: 30px;
+}
+
+#right {
+    right: 30px;
+}

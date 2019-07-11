@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>注册_Z商城</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="../src/css/login2.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header clearfix">
+            <!-- register-bar add by hanjw 2014-6-24-->
+            <div class="register-bar"><a href="/">立即登录</a>已经有值买账号？</div>
+            <!-- //register-bar add by hanjw 2014-6-24-->
+            <div class="logo">
+                <!-- modify by hanjw 2014-6-24 -->
+                <a title="Z商城" href="zol_index.html"><img width="130" height="60" title="Z商城" alt="Z商城" src="http://icon.zol-img.com.cn/newshop/shop/login/logo.png">
+                    <p>中关村在线旗下导购平台</p>
+                </a>
+                <!-- modify by hanjw 2014-6-24 -->
+            </div>
+        </div>
+    </div>
+
+    <div class="register-wrap clearfix">
+        <div class="title">30秒快速注册，加入值买</div>
+        <form id="J_RegisterForm" action="http://127.0.0.1:8080/zolstore/zol/src/php/register.php" method="POST" class="regform" id="formreg">
+            <div class="register-module">
+                <ul class="register-tab clearfix" id="J_register">
+                    <li class="current" rel="phone"><span class="phone-number">用手机号注册</span></li>
+                    <!--<li rel="email"><span class="email">用电子邮箱注册</span></li>-->
+                </ul>
+                <input type="hidden" value="1" name="J_register_type" id="J_register_type">
+                <div class="register-phone-number" style="display:block;" id="J_register_phone">
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>手机号：</div>
+                        <input name="J_register_phone_number" id="J_register_phone_number" type="text" class="text" maxlength="11">
+                        <i class="right-tips" style="display: none"></i>
+                        <i class="wrong-tips" style="display:none;" id="J_register_phone_tips">短信验证码错误，请重新填写</i>
+                        <div class="tips">请填写手机号码</div>
+                    </div>
+
+
+
+
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>密码：</div>
+                        <input name="J_register_pasword_phone" id="J_register_pasword_phone" type="password" class="text">
+                        <i class="wrong-tips" style="display:none;" id="J_register_pasword_phone_tips">密码不可以包含特殊字符</i>
+                        <div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>确认密码：</div>
+                        <input name="J_register_reg_pasword_phone" id="J_register_regPasword_phone" type="password" class="text">
+                        <i class="wrong-tips" style="display:none;" id="J_register_regPasword_phone_tips"></i>
+                        <div class="tips">再次输入密码</div>
+                    </div>
+                    <label class="agreement">                                            
+                                            <input type="checkbox" value="1" name="J_regRead_phone" id="J_regRead_phone" checked="">同意<a href="http://help.zol.com/index.php?c=Detail&amp;id=1019" target="_blank">《商城用户协议》</a><a href="http://help.zol.com/index.php?c=Detail&amp;id=1022" target="_blank" class="xy_a">《隐私权说明》</a>
+                                        </label>
+                    <input name="J_register_phone_submit" type="submit" value="注册" class="register-btn" id="J_register_phone_submit">
+                    <span style="display:none" class="register-btn submit-loading" id="J_register_phone_loading">正在注册...</span>
+                </div>
+
+                <div class="register-email" style="display:none;" id="J_register_email_layer">
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>邮箱：</div>
+                        <div class="email clearfix">
+                            <input name="J_register_email" id="J_register_email" type="text" class="text">
+                            <ul class="account-list" style="display:none;" id="J_register_accountList">
+                            </ul>
+                        </div>
+                        <i class="wrong-tips" style="display:none;" id="J_register_email_tips"></i>
+                        <div class="tips">请填写邮箱</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>密码：</div>
+                        <input name="J_register_pasword" id="J_register_pasword" type="password" class="text">
+                        <i class="wrong-tips" style="display:none;" id="J_register_pasword_tips"></i>
+                        <div class="tips">请填写密码</div>
+                    </div>
+
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>确认密码：</div>
+                        <input name="J_register_reg_pasword" type="password" class="text" id="J_register_reg_pasword">
+                        <i class="wrong-tips" style="display:none;" id="J_register_reg_pasword_tips"></i>
+                        <div class="tips">再次输入密码</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>验证码：</div>
+                        <div class="email-captcha clearfix">
+                            <input name="J_register_checkcode" id="J_register_checkcode" type="text" class="text">
+                            <input name="J_register_checkcode_token" id="J_register_checkcode_token" type="hidden" value="b84b6c9e8a79b995593d14147b1d3db4">
+                            <span class="captcha-img"><img width="98" height="38" src="https://service.zol.com.cn/captcha.php?token=b84b6c9e8a79b995593d14147b1d3db4&numCnt=6&widht=98&height=38" alt="" id="J_Captcha-Img"></span>
+                            <a href="javascript:void(0)" class="captcha-change" id="J_Captcha-Img_Change">换一张</a>
+                        </div>
+                        <i class="wrong-tips" style="display:none;margin-left:38px;" id="J_register_checkcode_tips"></i>
+                        <div class="tips">请填写验证码</div>
+                    </div>
+                    <label class="agreement">
+                                            <input type="checkbox" value="1" name="J_regRead" id="J_regRead" checked="">同意<a href="http://help.zol.com/index.php?c=Detail&amp;id=1019" target="_blank">《商城用户协议》</a><a href="http://help.zol.com/index.php?c=Detail&amp;id=1022" target="_blank" class="xy_a">《隐私权说明》</a>
+                                        </label>
+                    <input name="J_register_email_submit" id="J_register_email_submit" type="submit" value="注册" class="register-btn">
+                    <span style="display:none" class="register-btn submit-loading" id="J_register_email_loading">正在注册...</span>
+                </div>
+            </div>
+        </form>
+        <div class="fast-login">
+            <p>如果您已经注册，请<a href="https://login.zol.com/">直接登录</a>或者用以下方式登录：</p>
+            <div class="fast-login-list">
+                <a target="_blank" href="http://service.zol.com.cn/user/api/weixin/jump.php?backurl=http%3A%2F%2Fwww.zol.com" class="weixin">微信登录</a>
+                <a target="_blank" href="http://service.zol.com.cn/user/api/sina/jump.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com" class="sina">新浪微博登录</a>
+                <a target="_blank" href="http://service.zol.com.cn/user/api/qq/libs/oauth/redirect_to_login.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com" class="qq">腾讯QQ登录</a>
+                <a target="_blank" href="http://tuan.zol.com/userBinding/alipay/alipay.auth.authorize_php_gb/alipay_auth_authorize.php?fromUrl=http%3A%2F%2Fwww.zol.com" class="alipay">支付宝账号登录</a>
+                <a target="_blank" href="http://service.zol.com.cn/user/api/baidu/jump.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com" class="baidu">百度账号登录</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about"><a href="http://www.rongroad.com" target="_blank">关于Z商城</a>|<a href="http://www.rongroad.com" target="_blank">联系我们</a>|<a href="http://help.zol.com" target="_blank">帮助中心</a></div>
+            <div class="copyright">&copy;
+                <script type="text/javascript">
+                    var yearStr;
+                    now = new Date();
+                    yearStr = now.getFullYear();
+                    document.write(yearStr);
+                </script>. 中关村在线 版权所有</div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .inp {
+            border: 1px solid gray;
+            padding: 0 10px;
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+        }
+        
+        .btn {
+            border: 1px solid gray;
+            width: 100px;
+            height: 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        #embed-captcha {
+            margin: 0 auto;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        #notice {
+            color: red;
+        }
+    </style>
+    <script src="../src/script/thirdplugins/jquery.min.js"></script>
+
+
+
+</body>
+
+</html>
