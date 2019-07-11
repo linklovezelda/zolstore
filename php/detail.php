@@ -1,13 +1,22 @@
 <?php  
 	
-	include "conn.php";
+	include('conn.php');
 	
-	$id=$_GET['pid'];
+	@$id=$_GET['sid'];
 	
-	$result=mysql_query("select * from product where pid=$id ");
-	
-	$wronglist=mysql_fetch_array($result,MYSQL_ASSOC);
-	
-	echo json_encode($wronglist);
-
+	$sql = "select * from product where sid=$id ";
+   
+	$res = $mysqli->query($sql);
+   
+	$arr = array();
+   
+	   while($row = $res->fetch_assoc()){
+		   array_push($arr,$row);
+	   }
+   
+	   $json = json_encode($arr);
+	   
+	   echo $json;
+   
+	   $mysqli->close();
 ?>

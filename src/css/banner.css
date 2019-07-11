@@ -1,67 +1,73 @@
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-.banner {
-    width: 1009px;
-    height: 377px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-}
-
-.piclist {
-    position: absolute;
-}
-
-.piclist li {
-    float: left;
-}
-
-.piclist li img {
-    width: 1009px;
-    height: 377px;
-}
-
-li {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.btnlist {
+.banner {
+    width: 1000px;
+    height: 377px;
+    position: relative;
+    border: 1px solid orange;
+    margin: 10px auto;
+    margin-left: 190px
+}
+
+.banner ul li {
     position: absolute;
-    right: 20px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.banner ol {
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    left: 50%;
+    margin-left: -90px;
     bottom: 20px;
 }
 
-.btnlist li {
+.banner ol li {
     float: left;
     width: 20px;
     height: 20px;
-    background: red;
+    border-radius: 50%;
+    background: #000;
+    margin: 0 5px;
     text-indent: -99999px;
-    margin-right: 5px;
     cursor: pointer;
 }
 
-.btnlist .active {
+.banner ol li.active {
     background: blue;
 }
 
-#left,
-#right {
-    font-size: 64px;
-    color: #000;
+.right,
+.left {
+    font-size: 100px;
+    color: #fff;
+    font-family: verdana;
     position: absolute;
-    top: 150px;
     text-decoration: none;
+    top: 110px;
+    display: none;
 }
 
-#left {
-    left: 30px;
+.left {
+    left: 20px;
 }
 
-#right {
-    right: 30px;
+.right {
+    right: 20px;
+}
+
+.right:hover,
+.left:hover {
+    color: #000;
+}
+
+.banner ul li.showpic {
+    opacity: 1;
 }

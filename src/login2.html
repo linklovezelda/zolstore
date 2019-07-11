@@ -15,7 +15,7 @@
     <div class="wrapper">
         <div class="header clearfix">
             <!-- register-bar add by hanjw 2014-6-24-->
-            <div class="register-bar"><a href="http://127.0.0.1:8080/zolstore/src/register2.html">立即注册</a>还没有值买账号？</div>
+            <div class="register-bar"><a href="http://127.0.0.1:8080/zolstore/src/register.html">立即注册</a>还没有值买账号？</div>
             <!-- //register-bar add by hanjw 2014-6-24-->
             <div class="logo">
                 <!-- modify by hanjw 2014-6-24 -->
@@ -44,11 +44,11 @@
                         <input type="text" id="username" name="username" placeholder="请输入用户名" style="width: 278px;height:30px">
                         <br>
                         <label for="password">密码</label>
-                        <input type="password" id="password" name="password" placeholder="请输入密码" style="width: 278px;height:35px">
+                        <input type="password" id="password" name="password" placeholder="请输入密码" style="width: 278px;height:35px;display: block">
                         <br>
 
                         <br>
-                        <input type="submit" value="登录" style="width: 278px;height:30px;background: red">
+                        <input type="submit" value="登录" style="width: 278px;height:30px;background: darkred;display: block;color: #fff">
 
                         <div class="collaborate clearfix">
                             <div class="xian"></div>
@@ -102,6 +102,34 @@
         </div>
     </div>
     <script src="./script/thirdplugins/jquery.min.js"></script>
+    <script src="./script/thirdplugins/jquery.validate.min.js"></script>
+    <script src="./script/js/login.js"></script>
+    <!-- <script>
+        $("#J_loginForm").validate({
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 11
+                },
+                password: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 16
+                }
+            },
+            messages: {
+                username: {
+                    required: "请输入手机号",
+                    minlength: "请输入11位手机号"
+                },
+                password: {
+                    required: "请输入密码",
+                    minlength: "密码长度太短",
+                    maxlength: "密码长度太长"
+                }
+            }
+        })
+    </script> -->
     <script>
         $('.login-select .login-head ')
     </script>
