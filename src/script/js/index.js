@@ -10,20 +10,20 @@ $(function() {
                 str += `  
 					<div class="item item-list clearfix mt20 border-bottom">
 					<div class="pic-box fl">
-						<a href="details.html?sid=${n.sid}" >
+						<a href="http://127.0.0.1:8080/zolstore/src/details.html?sid=${n.sid}" >
 							<img class="lazy" src="${n.url}" width="154" alt="pbook 手机无线充电器">
 							<i class="icon-jiao f12">好价</i>
 						</a>
 					</div>
 					<div class="info-box fl ml20">
 						<h2 class="f20">
-							<a href="http://127.0.0.1:8080/zolstore/src/details.html" target="_blank" class="c333">
+							<a href="http://127.0.0.1:8080/zolstore/src/details.html?sid=${n.sid}" target="_blank" class="c333">
 			         ${n.title}                                   <font class="c-red">${n.price}元</font>
 							</a>
 						</h2>
 						<div class="pic-text f14 c666">
 							${n.details}
-							<a class="more-txt" href="http://127.0.0.1:8080/zolstore/src/details.html" target="_blank">阅读全文</a>
+							<a class="more-txt" href="http://127.0.0.1:8080/zolstore/src/details.html?sid=${n.sid}" target="_blank">阅读全文</a>
 						</div>
 						<div class="footer-info clearfix">
 							<div class="fl foot-info-fl">

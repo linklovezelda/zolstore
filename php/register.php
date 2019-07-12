@@ -12,7 +12,7 @@ $insertSql="insert into info1(username, password) values ('$username','$password
 $res=$mysqli->query($insertSql);
 if($res){
 	echo '<script>alert("注册成功，跳转登陆页面");
-	location.href="http://127.0.0.1:8080/zolstore/src/login.html";</script>';
+	location.href="http://127.0.0.1:8080/zolstore/src/login2.html";</script>';
 }else{
 	echo '<script> alert("注册失败,继续注册");
 	location.href="http://127.0.0.1:8080/zolstore/src/register.html";</script>';
