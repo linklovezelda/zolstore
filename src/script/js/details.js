@@ -1,19 +1,21 @@
 ! function() {
+    //1.获取sid
     var picid = location.search.substring(1).split('=')[1];
+
+
+    //2.将当前的id传给后端获取对应的数据
     $.ajax({
-        url: 'http://127.0.0.1:8080/zolstore/php/detail.php',
+        url: '127.0.0.1:8080/zolstore/php/detail.php',
         data: {
-            sid: picid
+            pid: picid
         },
         dataType: 'json'
-
-    }).done(function(data) {
-
+    }).done(function(data) { //data:后端返回的和id对应的数据
         console.log(data);
         $('#smallpic').attr('src', data.url);
         $('#bpic').attr('src', data.url);
         $('#smallpic').attr('sid', data.sid);
-        $('.loadtitle').html(data.title);
+        $('.loadtitle').html(data.titile);
         $('.loadpcp').html(data.price);
         var arr = data.urls.split(',');
         console.log(arr);
@@ -21,8 +23,9 @@
         $.each(arr, function(index, value) {
             str += '<li><img src="' + value + '"/></li>';
         });
-        $('#list ul').html(str)
-    })
+        $('#list ul').html(str);
+
+    });
 
 
     ! function() {
