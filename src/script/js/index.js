@@ -1,7 +1,7 @@
 $(function() {
     $.ajax({
         type: "GET",
-        url: "http://127.0.0.1:8080/zolstore/php/getproduct.php",
+        url: "../php/getproduct.php",
         dataType: "json",
         success: function(product) {
             var str = "";

@@ -5,7 +5,7 @@
 
     //2.将当前的id传给后端获取对应的数据
     $.ajax({
-        url: '127.0.0.1:8080/zolstore/php/detail.php',
+        url: '../php/detail2.php',
         data: {
             pid: picid
         },
@@ -26,6 +26,23 @@
         $('#list ul').html(str);
 
     });
+    // .done(function(data) { //data:后端返回的和id对应的数据
+    //     console.log(1211);
+    //     $('#smallpic').attr('src', data.url);
+    //     $('#bpic').attr('src', data.url);
+    //     $('#smallpic').attr('sid', data.sid);
+    //     $('.loadtitle').html(data.titile);
+    //     $('.loadpcp').html(data.price);
+    //     var arr = data.urls.split(',');
+    //     console.log(arr);
+    //     var str = '';
+    //     $.each(arr, function(index, value) {
+    //         str += '<li><img src="' + value + '"/></li>';
+    //     });
+    //     $('#list ul').html(str);
+
+    // });
+
 
 
     ! function() {

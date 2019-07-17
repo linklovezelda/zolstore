@@ -32,7 +32,7 @@
         <!-- 注册部分 -->
         <div class="registerwrap">
             <div class="title">30秒快速注册，加入值买</div>
-            <form action="http://127.0.0.1:8080/zolstore/php/register.php" method="POST" class="regform" id="formreg">
+            <form action="../php/register.php" method="POST" class="regform" id="formreg">
                 <label for="username">用&nbsp;户&nbsp;名</label>
                 <input type="text" id="username" name="username" placeholder="请输入用户名" style="width: 278px;height:30px;margin-left: 20px;margin-bottom: 30px">
                 <br>
@@ -79,41 +79,7 @@
 
     <script src="./script/thirdplugins/jquery.validate.min.js"></script>
     <script src="./script/js/register.js"></script>
-    <!-- <script>
-        $('#formreg').validate({
-            rules: {
-                username: {
-                    required: true,
-                    minlength: 11
-                },
-                password: {
-                    required: true,
-                    minlength: 6,
-                    maxlength: 16
-                },
-                passcheck: {
-                    required: true,
-                    equalTo: "#password"
-                }
 
-            },
-            messages: {
-                username: {
-                    required: "请输入手机号",
-                    minlength: "请输入11位手机号"
-                },
-                password: {
-                    required: "请输入密码",
-                    minlength: "密码长度太短",
-                    maxlength: "密码长度太长"
-                },
-                passcheck: {
-                    required: "请再次输入密码",
-                    equalTo: "两次密码输入不一致"
-                }
-            }
-        })
-    </script> -->
 
 </body>
 
